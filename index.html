@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+
+  <style>
+  </style>
+
+  <script>
+   var edb = require('./edb-frontend.js');
+   var client = null;
+
+   edb.client(function(c) {
+       client = c;
+   });
+  </script>
+  
+  <body>
+    <h1>Welcome</h1>
+    This is the demo/test application for the electron-dropbox module written by Graham Abbott.<br>
+    Hosted here: <a href='http://www.github.com/graham/electron-dropbox/'>On Github</a>
+  </body>
+</html>
